@@ -36,7 +36,6 @@ button.addEventListener('click', () => {
         button.textContent = 'Try again';
     } else if (num < 1 || num > 100) {
         result.textContent = 'Please enter a number between 1 and 100';
-        result.style.color = 'red';
         button.textContent = 'Try again';
     } else {
         if (guessedNum.length === 10) {
@@ -106,8 +105,7 @@ window.addEventListener('load', () => {
     document.querySelector('input').value = '';
 });
 
-// btn1 will change the background every time the user clicks it to a specific image and the text of the button should be changed to number of clicks and the image name should be displayed on backgroundimage of the body
-// twe do it like this
+// image button
 // create an array of images
 let images = ['img/c.jpg', 'img/d.jpg', 'img/f.jpg', 'img/g.jpg'];
 // create a variable to count the number of clicks
