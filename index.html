@@ -5,12 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guess the number</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <!-- button to change the background image -->
+    <button class="btn1" id="btn1">background</button>
+    <div class="Container">
+        <div class="section1">
+            <p><b>I am thinking of a number between 1 and 100</b></p>
+            <p>
+                <center>Can you guess it?</center>
+            </p>
+        </div>
+        <div class="section2">
+            <input class="num" type="text" id="input" placeholder="NUM" maxlength="3">
+            <button class="btn" id="btn">Guess</button>
+            <p id="problem"></p>
+        </div>
+        <div class="section3">
+            <b style="background-color: black; color: aliceblue;"><p id="result"></p></b>
+            <p><b>Number of guesses: </b> <span id="numGuess">0</span></p>
+            <p>
+                <b>Guessed numbers: </b> <span id="guessedNum">none</span></p>
+        </div>
+    </div>
 </body>
 <script src="app.js"></script>
 

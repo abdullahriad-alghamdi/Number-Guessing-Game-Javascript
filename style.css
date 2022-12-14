@@ -1,0 +1,175 @@
+/* *------------------------------------------------------------------------
+ *                           Table of Contents
+ *------------------------------------------------------------------------* */
+
+
+/* 1.0 - Global
+/* 2.0 - Container
+/*    -2.1 - section1
+/*    -2.2 - section2
+/*    -2.3 - section3
+/* 3.0 - Media Queries
+/*------------------------------------------------------------------------*/
+
+
+/* 1.0 - Global */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---- END OF SECTION ----*/
+
+
+/* 2.0 - Container */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/c.jpg")
+}
+
+.btn1 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: #000000;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    border: none;
+    color: #e7e7e7;
+    font-size: .7rem;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.Container {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffffd0;
+    border-radius: 1.25rem;
+    gap: 3em;
+}
+
+
+/*---- END OF SECTION ----*/
+
+
+/* 2.1 - section1 */
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 1.3em;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+}
+
+
+/*---- END OF SECTION ----*/
+
+
+/* 2.2 - section2 */
+
+.num {
+    border-radius: 0.625em;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #000000;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #0000001f;
+}
+
+.btn {
+    background-color: #edb600;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    /* 200px to rem is */
+    width: 12.5rem;
+    height: 3.125rem;
+    text-align: center;
+    color: #e7e7e7;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.btn:hover {
+    background-color: #d8a600;
+    color: rgb(255, 255, 255);
+}
+
+
+/*---- END OF SECTION ----*/
+
+
+/*---- END OF SECTION ----*/
+
+
+/* 3.0 - Media Queries */
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 0.7em;
+    }
+    .Container {
+        width: 20rem;
+        height: 20rem;
+    }
+    .num {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    .btn {
+        width: 8rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    body {
+        font-size: 0.6em;
+    }
+    .Container {
+        width: 18rem;
+        height: 18rem;
+    }
+    .num {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    .btn {
+        width: 8rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+    .section1 {
+        font-size: 1.1em;
+    }
+}
